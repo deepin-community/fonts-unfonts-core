@@ -1,0 +1,27 @@
+Source: fonts-unfonts-core
+Section: fonts
+Priority: optional
+Maintainer: Debian Fonts Task Force <debian-fonts@lists.debian.org>
+Uploaders: Changwoo Ryu <cwryu@debian.org>, Hideki Yamane <henrich@debian.org>
+Build-Depends: debhelper (>= 11~),
+               debhelper-compat (= 11),
+               fontforge-nox,
+Standards-Version: 4.2.1
+Homepage: http://kldp.net/unfonts/
+Vcs-Git: https://salsa.debian.org/fonts-team/fonts-unfonts-core.git
+Vcs-Browser: https://salsa.debian.org/fonts-team/fonts-unfonts-core
+
+Package: fonts-unfonts-core
+Architecture: all
+Pre-Depends: dpkg (>= 1.15.7.2)
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Breaks: ttf-unfonts (<< 1.0.1-7), ttf-unfonts-core (<< 1.0.2-080608-4)
+Replaces: ttf-unfonts (<< 1.0.1-7), ttf-unfonts-core (<< 1.0.2-080608-4)
+Description: Un series Korean TrueType fonts
+ This is a set of Korean TrueType fonts.  These fonts were made from
+ the HLaTeX's PostScript fonts and modified slightly.
+ .
+ This package has only the most common font families (UnBatang, UnDotum,
+ Ungraphic, Unpilgi, and UnGungseo). Install fonts-unfonts-extra for
+ additional fonts.

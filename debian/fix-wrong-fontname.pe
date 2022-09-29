@@ -1,0 +1,5 @@
+#! /usr/bin/fontforge
+
+Open("UnDinaruLight.ttf")
+SetFontNames("UnDinaru-Light")
+Generate("./debian/fonts-unfonts-core/usr/share/fonts/truetype/unfonts-core/UnDinaruLight.ttf")
